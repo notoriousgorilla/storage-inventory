@@ -1,0 +1,14 @@
+// Place all the styles related to the Furniture controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.row {
+    max-height: 5em;
+    .furniture-photo {
+        max-height: 5em;
+        img {
+            max-width: 5em;
+            max-height: 5em;
+        } 
+    }
+}

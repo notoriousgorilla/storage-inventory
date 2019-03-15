@@ -1,0 +1,42 @@
+<div class='container'>
+    <div class='row'>
+        <div class='col-4'>
+            <%= link_to 'New Item', 'furnitures/new' %>
+        </div>
+        <div class='col-4'>
+            
+        </div>
+        <div class='col-4'>
+            
+        </div>
+    </div>
+</div>
+<div class='container'>
+    <div class='row'>
+         <% @locations.each do |item| %>
+            <div class='col-3'>
+                <div class='furniture-name'>
+                    <p><%= item.storage_name %></p>
+                </div>
+            </div>
+            <div class='col-3'>
+                <div class='furniture-name'>
+                    <p><%= item.description %></p>
+                </div>
+            </div>
+            <div class='col-2'>
+                <div class='furniture-photo'>
+                    
+                </div>
+            </div>
+            <div class='col-1'>
+                <div class='furniture-name'>
+                    <p><%= item.id %></p>
+                </div>
+            </div>
+            <div class=col-3>
+                <%= link_to 'show location', show_location_path(item) %>
+            </div>
+         <% end %>
+    </div>
+</div>

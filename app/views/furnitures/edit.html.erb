@@ -1,0 +1,41 @@
+<div class='container'>
+    <div class='row'>
+        <div class='col-3'>
+            
+        </div>
+        <div class='col-6'>
+            <%= form_for(@furniture) do |f| %>
+                <div class='field-furniture'>
+                    <%= f.label :name %><br>
+                    <%= f.text_field :name %><br>
+                    <%= f.label :description %><br>
+                    <%= f.text_field :description %><br>
+                    <%= f.label :image %><br>
+                    <%= f.file_field :image %><br>
+                    <%= f.label :A2 %><br>
+                    <%= f.number_field :A2 %><br>
+                    <%= f.label :BC2 %><br>
+                    <%= f.number_field :BC2 %><br>
+                    <%= f.label :B2F %><br>
+                    <%= f.number_field :B2F %><br>
+                    <%= f.label :BU50 %><br>
+                    <%= f.number_field :BU50 %><br>
+                    <%= f.label :BU60 %><br>
+                    <%= f.number_field :BU60 %><br>
+                    <%= f.label :ABU1 %><br>
+                    <%= f.number_field:ABU1 %><br>
+                    <%= f.label :Fjellager %><br>
+                    <%= f.number_field :Fjellager %><br>
+                    <%= f.label :Stollager %><br>
+                    <%= f.number_field :Stollager %><br>
+                </div>
+                <div class='actions'>
+                    <%= f.submit "Update Item" %>
+                </div>
+            <% end %>
+        </div>
+        <div class='col-3'>
+            
+        </div>
+    </div>
+</div>

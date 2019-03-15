@@ -1,0 +1,28 @@
+<div class='container'>
+    <div class='row'>
+        <div class='col-3'>
+            <div class='furniture-name'>
+                <%= @location.storage_name %>
+            </div>
+        </div>
+        <div class='col-3'>
+            <div class='furniture-name'>
+                <%= @location.description %>
+            </div>
+        </div>
+        <div class='col-3'>
+             <div class='furniture-name'>
+                
+             </div>
+        </div>
+        <div class='col-3'>
+            <% @location.furniture.each do |loc| %>
+                <div class='furniture-name'>
+                    <p><%= loc.name %></p>
+                    <p><%= loc.storage_count %></p>
+                </div>
+            <% end %>
+            
+        </div>
+    </div>
+</div>

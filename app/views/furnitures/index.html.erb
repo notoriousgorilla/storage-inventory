@@ -1,0 +1,64 @@
+<div class='container'>
+    <div class='row'>
+        <div class='col-4'>
+            <%= link_to 'New Item', 'furnitures/new' %>
+        </div>
+        <div class='col-4'>
+            
+        </div>
+        <div class='col-4'>
+            
+        </div>
+    </div>
+</div>
+<div class='container'>
+    <div class='row'>
+        <div class='col-2'>
+            <div class='furniture-name-name' id='furniture-name-name'>
+                <p><strong>NAME</strong></p>
+            </div>
+        </div>
+        <div class='col-3'>
+            <div class='furniture-name-name' id='furniture-name-name'>
+                <p><strong>DESCRIPTION</strong></p>
+            </div>
+        </div>
+        <div class='col-2'>
+            <div class='furniture-name-name' id='furniture-name-name'>
+                <p><strong>FURNITURE ID</strong></p>
+            </div>
+        </div>
+        <div class='col-2'>
+            <div class='furniture-name-name' id='furniture-name-name'>
+                <p><strong>IMAGE</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+         <% @furnitures.each do |item| %>
+            <div class='col-2'>
+                <div class='furniture-name'>
+                    <p><%= item.name %></p>
+                </div>
+            </div>
+            <div class='col-3'>
+                <div class='furniture-name'>
+                    <p><%= item.description %></p>
+                </div>
+            </div>
+            <div class='col-2'>
+                <div class='furniture-name'>
+                    <p><%= item.id %></p>
+                </div>
+            </div>
+            <div class='col-2'>
+                <div class='furniture-photo'>
+                    <p><%= image_tag item.image %></p>
+                </div>
+            </div>
+            <div class=col-3>
+                <%= link_to 'show furniture', show_furniture_path(item) %>
+            </div>
+         <% end %>
+    </div>
+</div>
