@@ -1,16 +1,16 @@
 <div class='container'>
     <div class='row'>
-        <div class='col-2'>
-            <div class='furniture-name'>
+        <div class='col-4'>
+            <div class='furniture-name-titletop'>
                 <p><strong>Name</strong></p>
             </div>
         </div>
-        <div class='col-2'>
-            <div class='furniture-name'>
+        <div class='col-4'>
+            <div class='furniture-name-titletop'>
                 <p><strong>Description</strong></p>
             </div>
         </div>
-        <div class='col-2'>
+        <div class='col-4'>
             <div class='furniture-name-edit'>
                 <p> <%= link_to 'edit item', edit_furniture_path %> </p>
             </div>
@@ -20,13 +20,13 @@
         </div>
     </div>
     <div class='row'>
-        <div class='col-2'>
-            <div class='furniture-name'>
+        <div class='col-4'>
+            <div class='furniture-name-title'>
                 <p><%= @furniture.name %></p>
             </div>
         </div>
-        <div class='col-2'>
-            <div class='furniture-name'>
+        <div class='col-4'>
+            <div class='furniture-name-title'>
                 <p><%= @furniture.description %></p>
             </div>
         </div>
